@@ -1,0 +1,70 @@
+#hero {
+    font-size: 3rem;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+#hero h1,
+#hero p,
+#hero h1 span,
+#hero button {
+    position: absolute;
+}
+
+#hero h1 span {
+    font-size: 1.7rem;
+    margin-top: -2rem;
+    padding-left: 0.5rem;
+    color: #5f81ad;
+}
+
+#hero p {
+    font-size: 1.4rem;
+    margin-top: 12rem;
+}
+
+/* Button in HERO Section */
+#hero button {
+    width: 200px;
+    padding: 1.6rem;
+    color: #5f81ad;
+    background-color: rgb(5, 12, 41);
+    border: 2px solid #5f81ad;
+    margin-top: 23rem;
+    cursor: pointer;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    transition: 1.5s;
+
+}
+
+#hero button:hover,
+#hero button:focus {
+    padding-left: 2rem;
+    box-shadow: 0px 8px 15px #5f81ad;
+    transition: all 1.5s ease 0s;
+    -webkit-transition: all 1.5s ease 0s;
+    -moz-transition: all 1.5s ease 0s;
+    -ms-transition: all 1.5s ease 0s;
+    -o-transition: all 1.5s ease 0s;
+}
+
+#hero a {
+    text-decoration: none;
+    color: #5f81ad;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5px;
+}
+@media screen and (max-width: 500px) {
+    #hero h1 {
+        margin-left: 5rem;
+    }
+}
