@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+    background: rgb(5, 12, 41);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5f81ad;
+    -webkit-border-radius: 1ex;
+}
+
+body {
+    background-color: rgb(5, 12, 41);
+}
+
+::selection {
+    background-color: #5f81ad;
+}
+
+span::selection,
+button a::selection,
+h2::selection,
+#contact .contact-me p::selection {
+    background-color: white;
+}
+
+section {
+
+    position: relative;
+    color: #fff;
+    background-color: rgb(5, 12, 41);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* End General Setting */
+/* Start Navbar */
+.navbar {
+    width: 100%;
+    height: 3.3rem;
+    background-color: rgb(5, 12, 41);
+    overflow: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    padding-top: 0.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+/* Navbar logo */
+.navbar .logo {
+    position: absolute;
+    left: 1rem;
+    top: .3rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    transition: 1.5s;
+    text-align: center;
+}
+
+.navbar .logo a {
+    color: #5f81ad;
+    transition: 1.5s;
+    height: 3rem;
+    width: 3rem;
+    line-height: .7;
+    border: .2rem solid #5f81ad;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding-bottom: 1rem;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+/* Navbar logo on mouse-over */
+.navbar .logo a:hover,
+.navbar .logo a:focus {
+    background-color: transparent;
+    color: #5f81ad;
+    position: absolute;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    font-size: 1rem;
+    top: -.3rem;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .85rem;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.navbar a.resume {
+    border: #5f81ad 1px solid;
+    margin-left: .3rem;
+    padding: 1rem;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    height: 90%;
+}
+
+.navbar a.resume:hover {
+    font-size: 1rem;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #5f81ad;
+    border: transparent;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+/* End Navbar */
+@media screen and (max-width: 500px) {
+    .navbar a.resume {
+        margin-right: -2rem;
+    }
+}
